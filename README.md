@@ -143,6 +143,19 @@ When the task is ready (`status: "ready"`), `solution` contains:
 | `randstr` | `string` | Random string for server validation |
 | `appid` | `string` | The appId echoed back |
 
+### Example
+
+```json
+{
+  "status": "ready",
+  "solution": {
+    "ticket": "tdc_RTAAyXfmW9Vy<long ticket string>",
+    "randstr": "@xC1",
+    "appid": "189910271"
+  }
+}
+```
+
 ### How to use the result
 
 Submit `ticket`, `randstr`, and `appid` to the target site's verification endpoint exactly as Capzy returns them.
